@@ -1,0 +1,101 @@
+<!-- Crear un formulario de contacto -->
+<!-- El formulario debe tener los siguientes campos: nombre,apellido, email,sex, nivel de educacion y comentarios-->
+<!-- El formulario debe tener un boton de enviar -->
+<!-- El formulario debe tener un boton de borrar -->
+<!-- El formulario debe tener un boton de cancelar -->
+<!-- validacion del formulario mediante javascript -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Cursos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="mysql.html">MySQL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulario de contacto</h2>
+        <form action="enviar.php" method="post" name="formulario" onsubmit="return validar()">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+            <br><br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su email">
+            <br><br>
+            <p>Género:
+                <input type="radio"name="genero"value="Hombre" checked>Hombre
+                <input type="radio"name="genero"value="Mujer">Mujer
+                <input type="radio"name="genero"value="Otro">Otro
+            </p>
+           <br><br>
+            <p>Estudios:
+                <input type="checkbox"name="estudios"value="Primario">Primario
+                <input type="checkbox"name="estudios"value="Secundario">Secundario
+                <input type="checkbox"name="estudios"value="Terciario">Terciario
+                <input type="checkbox"name="estudios"value="Universitario">Universitario
+            </p>
+            <br><br>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="3" placeholder="Ingrese sus comentarios"></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <input type="button" value="Cancelar" onclick="location.href='index.html'">
+        </form>
+    </main>
+<script>
+    function validar(){
+        var nombre, apellido, email, sexo, educacion, comentarios;
+        nombre = document.getElementById("nombre").value;
+        apellido = document.getElementById("apellido").value;
+        email = document.getElementById("email").value;
+        sexo = document.getElementById("sexo").value;
+        educacion = document.getElementById("educacion").value;
+        comentarios = document.getElementById("comentarios").value;
+        expresion = /\w+@\w+\.+[a-z]/;
+        if(nombre === "" || apellido === "" || email === "" || sexo === "" || educacion === "" || comentarios === ""){
+            alert("Todos los campos son obligatorios");
+            return false;
+        }
+        else if(nombre.length>30){
+            alert("El nombre es muy largo");
+            return false;
+        }
+        else if(apellido.length>30){
+            alert("El apellido es muy largo");
+            return false;
+        }
+        else if(email.length>100){
+            alert("El email es muy largo");
+            return false;
+        }
+        else if(!expresion.test(email)){
+            alert("El email no es valido");
+            return false;
+        }
+        else if(comentarios.length>200){
+            alert("Los comentarios son muy largos");
+            return false;
+        }
+    }
+
+</script>
+    
+</body>
+</html>
