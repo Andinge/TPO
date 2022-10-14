@@ -10,27 +10,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleF.css">
+    <script src="https://kit.fontawesome.com/198c1dc03d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./Logos TPO/favicon.ico" type="image/x-icon">
+   
     <title>Formulario de contacto</title>
+    
 </head>
 <body>
     <header>
-        <h1>Cursos</h1>
+        <h1 id="titulo">Programar es posible</h1>
+        <img src="./Logos TPO/Programar.gif" alt="Programar es posible">
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="php.html">PHP</a></li>
-                <li><a href="mysql.html">MySQL</a></li>
-            </ul>
+            <!-- dirigirse a seccion "cursos gratis" de la pagina -->
+            <a href="#Cursos gratis">Cursos gratis</a>
+            <!-- dirigirse a seccion "cursos pagos" de la pagina -->
+            <a href="#Cursos pagos">Cursos pagos</a>
+            <!-- dirigirse a seccion "cursos de Youtube" de la pagina -->
+            <a href="#Cursos de Youtube">Cursos de Youtube</a>
+            <!-- dirigirse a seccion "Recursos web" de la pagina -->
+            <a href="#Recursos web">Recursos web</a>
+            <!-- dirigirse a seccion "Preguntas frecuentes" de la pagina -->
+            <a href="#Preguntas frecuentes">Preguntas frecuentes</a>
+            <!-- dirigirse a seccion "Contacto" de la pagina -->
+            <a class="formulario" href="formulario.html">Registro</a>
+
         </nav>
     </header>
     <main>
         <h2>Formulario de contacto</h2>
-        <form action="enviar.php" method="post" name="formulario" onsubmit="return validar()">
-            <label for="nombre">Nombre</label>
+
+        <form action="https://formspree.io/f/mbjbkwoe"method="POST"onsubmit="return validar()">
+
+            <label for= "nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
             <br><br>
             <label for="apellido">Apellido</label>
@@ -38,38 +51,37 @@
             <br><br>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Ingrese su email">
-            <br><br>
+            
             <p>Género:
                 <input type="radio"name="genero"value="Hombre" checked>Hombre
                 <input type="radio"name="genero"value="Mujer">Mujer
                 <input type="radio"name="genero"value="Otro">Otro
             </p>
-           <br><br>
+           
             <p>Estudios:
                 <input type="checkbox"name="estudios"value="Primario">Primario
                 <input type="checkbox"name="estudios"value="Secundario">Secundario
                 <input type="checkbox"name="estudios"value="Terciario">Terciario
                 <input type="checkbox"name="estudios"value="Universitario">Universitario
             </p>
-            <br><br>
+            
             <label for="comentarios">Comentarios</label>
             <textarea name="comentarios" id="comentarios" cols="50" rows="3" placeholder="Ingrese sus comentarios"></textarea>
-            <input type="submit" value="Enviar">
+            <br><br>
+            <input class="button" type="submit" value="Registrarse">
             <input type="reset" value="Borrar">
             <input type="button" value="Cancelar" onclick="location.href='index.html'">
+            
         </form>
     </main>
 <script>
     function validar(){
-        var nombre, apellido, email, sexo, educacion, comentarios;
+        var nombre, apellido, email, comentarios;
         nombre = document.getElementById("nombre").value;
         apellido = document.getElementById("apellido").value;
         email = document.getElementById("email").value;
-        sexo = document.getElementById("sexo").value;
-        educacion = document.getElementById("educacion").value;
         comentarios = document.getElementById("comentarios").value;
-        expresion = /\w+@\w+\.+[a-z]/;
-        if(nombre === "" || apellido === "" || email === "" || sexo === "" || educacion === "" || comentarios === ""){
+        if(nombre === "" || apellido === "" || email === "" || comentarios === ""){
             alert("Todos los campos son obligatorios");
             return false;
         }
@@ -77,7 +89,7 @@
             alert("El nombre es muy largo");
             return false;
         }
-        else if(apellido.length>30){
+        else if(apellido.length>80){
             alert("El apellido es muy largo");
             return false;
         }
@@ -85,17 +97,24 @@
             alert("El email es muy largo");
             return false;
         }
-        else if(!expresion.test(email)){
-            alert("El email no es valido");
-            return false;
-        }
         else if(comentarios.length>200){
             alert("Los comentarios son muy largos");
             return false;
         }
+   
     }
 
 </script>
-    
+<br><br><br><br><br>  
 </body>
+<footer>
+    <!-- 5 iconos relacionales a redes sociales -->
+  
+    <a class="icon" href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a class="icon" href="https://www.facebook.com/" target="_blank"></i><i class="fa-brands fa-facebook"></i></i></a>
+    <a class="icon" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+    <a class="icon" href="https://www.instagram.com/" target="_blank"></i><i class="fa-brands fa-instagram"></i></i></a>
+    <a class="icon" href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <p class="copyright">Derechos reservados @2022</p>
+  </footer>
 </html>
