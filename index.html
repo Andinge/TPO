@@ -4,99 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <!-- Esta parte hay que modificarla junto al css  -->
+
+    <!-- <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">    
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">    -->
+    
+    <script src="https://kit.fontawesome.com/198c1dc03d.js" crossorigin="anonymous"></script>  
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./Logos TPO/favicon.ico" type="image/x-icon">
+
+    <title>Programar es posible</title>
 </head>
 <body>
     <!-- Página web sobre cursos -->
-    <!-- 1 header, 5 secciones y footer-->
-    <!-- el header va a contener título centrado, animado en css y un menu -->
+    <!-- 1 header, 6 secciones y footer-->
 
     <header>
         <h1 id="titulo">Programar es posible</h1>
+        <img src="./Logos TPO/Programar.gif" alt="Programar es posible">
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="php.html">PHP</a></li>
-                <li><a href="mysql.html">MySQL</a></li>
-            </ul>
+        <nav>
+            <!-- dirigirse a seccion "cursos gratis" de la pagina -->
+            <a href="#Cursos gratis">Cursos gratis</a>
+            <!-- dirigirse a seccion "cursos pagos" de la pagina -->
+            <a href="#Cursos pagos">Cursos pagos</a>
+            <!-- dirigirse a seccion "cursos de Youtube" de la pagina -->
+            <a href="#Cursos de Youtube">Cursos de Youtube</a>
+            <!-- dirigirse a seccion "Recursos web" de la pagina -->
+            <a href="#Recursos web">Recursos web</a>
+            <!-- dirigirse a seccion "Preguntas frecuentes" de la pagina -->
+            <a href="#Preguntas frecuentes">Preguntas frecuentes</a>
+            <!-- dirigirse a seccion "Contacto" de la pagina -->
+            <a class="formulario" href="formulario.html">Registro</a>
+
         </nav>
     </header>
-    <!-- Seccion 1 = Cursos gratis, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
-    <section id="cursos">
-        <h2>Cursos gratis</h2>
-        <table>
-            <tr>
-                <td>
-                    <img src="./img/html.png" alt="HTML">
-                    <p>HTML es el lenguaje de marcado para páginas web. Con él puedes crear y estructurar sitios web y aplicaciones web. HTML describe la estructura de una página web semánticamente y originalmente incluía cues para la visualización de la página en navegadores web.</p>
-                </td>
-                <td>
-                    <img src="./img/css.png" alt="CSS">
-                    <p>CSS es un lenguaje de hojas de estilo que describe el diseño visual de un documento escrito en un lenguaje de marcado. CSS describe cómo debe ser mostrado un documento HTML o XML (incluyendo XML dialectos como SVG o XHTML). CSS no es un lenguaje de programación, y no tiene ningún mecanismo para interactuar con los datos o con el control de flujo, por lo que no es posible crear aplicaciones con CSS.</p>
-                </td>
-                <td>
-                    <img src="./img/javascript.png" alt="JavaScript">
-                    <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
-                </td>
-            </tr>
-        </table>        
-
-    
-    
-        
-    </section>
-    <!-- Seccion 2 = Cursos de pago, donde hay 3 ventanas que muestran 3 paginas web a traves de iframe -->
-    <section class="seccion3">
-        <h2>Cursos de pago</h2>
-        <iframe src="https://www.udemy.com/" title="Udemy"></iframe>
-        <iframe src="https://www.coursera.org/" title="Coursera"></iframe>
-        <iframe src="https://www.edx.org/" title="Edx"></iframe>
-    </section>
-    <!-- Seccion 3 = Cursos desde youtube de programacion
-    , donde hay 3 ventanas que muestran 3 paginas web a traves de iframe(que muestre el primer video de cada curso) -->
-    <section class="seccion3">
-        <h2>Cursos desde youtube</h2>
-        <iframe src="https://www.youtube.com/embed/1pZgQ9ZgXoY" title="HTML"></iframe>
-        <iframe src="https://www.youtube.com/embed/1pZgQ9ZgXoY" title="CSS"></iframe>
-        <iframe src="https://www.youtube.com/embed/1pZgQ9ZgXoY" title="JavaScript"></iframe>
-    </section>
-    <!-- Seccion 4 = recursos web de programacion -->
-    <section class="seccion4">
-        <h2>Recursos web</h2>
-        <ul>
-            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-            <li><a href="https://developer.mozilla.org/es/">MDN</a></li>
-            <li><a href="https://www.freecodecamp.org/">FreeCodeCamp</a></li>
-        </ul>
-
-    </section>
-    <!-- Seccion 5 = faqs-->
-    <section class="seccion5">
-        <h2>FAQs</h2>
-        <ul>
-            <li>¿Qué es un curso?</li>
-            <li>¿Qué es un curso de pago?</li>
-            <li>¿Qué es un curso gratis?</li>
-        </ul>
-    </section>
+    <main>
+        <!-- Seccion 1 =  -->
+        <!-- Seccion donde va la pagina linkeada a la web de Miguel despues yo hago el html-->
 
 
+
+            <!-- Seccion 2 = Cursos gratis, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
+        <section id="Cursos gratis">
+                <h2>Cursos gratis</h2>
+                <!-- crear div principal con 3 div interiores y que cada uno contenga un div tumbail 50% y un div parrafo 30% -->
+            <div class="cursos">
+                <div class="curso">
+                    <div class="tumbail">
+                         <a href="https://es.khanacademy.org/"target="_blank"><img src="./Logos TPO/Khan Academy.png"> </a>
+                    </div>
+
+                <div class="descripcion">
+                    <p>Somos una organización sin fines de lucro con la misión de ofrecer educación gratuita de primer nivel, para cualquier persona en cualquier lugar.</p>
+                </div>
+                <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
+                <div class="boton">
+                    <a href="https://es.khanacademy.org/"target="_blank">Ver curso</a>
+                </div>
+            <div class="curso">
+                <div class="tumbail">
+                    <a href="https://eggcooperation.com" target="_blank"><img src="./Logos TPO/egg.png"></a>
+                </div>
+                <div class="descripcion">
+                    <p>La Beca Egg es un beneficio para cursar Programación Desde Cero durante 7 semanas, ideal para quienes tienen el impulso y las ganas de formarse con nosotros, pero necesitan validar de forma rápida si desean invertir su tiempo en desarrollar un perfil profesional como programadores.</p>
+                </div>
+                <div class="boton">
+                    <a href="https://eggcooperation.com" target="_blank">Ver curso</a>
+                </div>
+            </div>
+            <div class="curso">
+                <div class="tumbail">
+                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"><img src="./Logos TPO/freecodecamp.png"></a>
+                </div>
+                <div class="descripcion">
+                    <p>FreeCodeCamp es una comunidad de código abierto donde puedes aprender a programar y ayudar a otros a hacerlo. Nuestro enfoque es ayudarte a construir una carrera en desarrollo web, pero también puedes aprender a programar para cualquier cosa que te guste.</p>
+                </div>
+                <div class="boton">
+                    <a href="https://www.freecodecamp.org/espanol/" target="_blank">Ver curso</a>
+                </div>
+         </section>
+            
+
+
+
+
+            <!-- Seccion 3 = Cursos pagos, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
+        <section id="Cursos pagos">
+            <h2>Cursos pagos</h2>
+            <!-- crear div principal con 3 div interiores y que cada uno contenga un div tumbail 50% y un div parrafo 30% -->
+            <div class="cursos">
+                <div class="curso">
+                    <div class="tumbail">
+                        <a href="https://www.udemy.com/course/curso-completo-de-desarrollo-web-con-html5-css3-js-php-y-mysql/" target="_blank"><img src="./Logos TPO/udemy.png"></a>
+                    </div>
+                    <div class="descripcion">
+                        <p>Curso completo de desarrollo web con HTML5, CSS3, JS, PHP y MySQL.
+                        Aprende a crear tu propia página web desde cero, sin necesidad de conocimientos previos.
+                        <br>
+                        Elige entre más de 204.000 cursos de vídeo en línea con nuevo contenido cada mes.
+                        </p>
+                    </div>
+                    <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
+                    <div class="boton">
+                        <a href="https://www.udemy.com/course/curso-completo-de-desarrollo-web-con-html5-css3-js-php-y-mysql/" target="_blank">Ver curso</a>
+                </div>
+                <div class="curso">
+                    <div class="tumbail">
+                        <a href="https://www.educacionit.com" target="_blank"><img src="./Logos TPO/educacion IT.png"></a>
+                    </div>
+                    <div class="descripcion">
+                        <p>Descubre los alcances que tiene el ecosistema digital y cómo se convirtió en un requisito indispensable para el mercado laboral.
+                        <br>
+                         Recorre tus primeros pasos en temas claves como el marketing digital, el diseño web, las redes sociales y la experiencia de usuario.</p>
+                    </div>
+                    <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
+                    <div class="boton">
+                        <a href="https://www.educacionit.com" target="_blank">Ver curso</a>
+                </div>
+                <div class="curso">
+                    <div class="tumbail">
+                        <a href="https://platzi.com/" target="_blank"><img src="./Logos TPO/Platzy.png"></a>
+                    </div>
+                    <div class="descripcion">
+                        <p>Platzi es una plataforma de educación en línea que ofrece cursos de desarrollo web, diseño, marketing, negocios, tecnología y mucho más.
+                        <br>
+                        Nuestro objetivo es democratizar la educación y ayudar a las personas a desarrollar sus habilidades para que puedan alcanzar sus sueños y objetivos profesionales.</p>
+                    </div>
+                    <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
+                    <div class="boton">
+                        <a href="https://platzi.com/" target="_blank">Ver curso</a>
+                </div>
+            </div>
+        </section>
+             <!-- Seccion 4 = Cursos desde youtube de programacion
+            , donde hay 3 ventanas que muestran 3 paginas web a traves de iframe(que muestre el primer video de cada curso) -->
+
+            <section id="Cursos de Youtube" class="Cursos de youtube">
+
+                <h2>Cursos desde youtube</h2>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AXPASVeX74o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/spMYZHepjko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </section>
+            <!-- Seccion 5 = recursos web de programacion -->
+            <section id="Recursos web" class="Recursos web">
+                <h2>Recursos web</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/es/">MDN</a></li>
+                    <li><a href="https://www.codeshare.io/">Codeshare</a></li>
+                    <li><a href="https://www.lenguajehtml.com//">Lenguaje html</a></li>
+                    <li><a href="https://www.formspree.io/">Formspree</a></li>
+                    <li><a href="https://www.sololearn.com/">SoloLearn</a></li>
+                </ul>
+
+            </section>
+            <!-- Seccion 6 = Preguntas frecuentes-->
+            <section id="Preguntas frecuentes" class="Preguntas frecuentes">
+                <h2>Preguntas frecuentes</h2>
+                <ul>
+                    <li>¿Qué es un curso?</li>
+                    <p>Un curso es una serie de lecciones que te ayudarán a aprender un tema específico. Cada curso tiene un objetivo y un nivel de dificultad.</p>
+                    <li>¿Qué es un curso gratuito?</li>
+                    <p>Un curso gratuito es un curso que puedes tomar sin pagar nada. Puedes acceder a todos los cursos sin cargo.</p>
+                    <li>¿Qué es un curso de pago?</li>
+                    <p>Un curso de pago es un curso que puedes tomar pagando una tarifa. Puedes acceder a todos los cursos de pago.</p>
+                    <li>¿Es necesario ir a la universidad?</li>
+                    <p>La universidad es una gran opción para aprender, pero no es la única. En la actualidad, existen muchas otras opciones para aprender, como los cursos en línea.</p>
+                    <li>¿Qué es un curso de certificación?</li>
+                    <p>Un curso de certificación es un curso que te prepara para obtener una certificación. Al finalizar el curso, puedes tomar un examen para obtener una certificación.</p>
+                    <li>¿Qué es una rama de aprendizaje?</li>
+                    <p>Una rama de aprendizaje es un conjunto de cursos que te ayudarán a aprender un tema específico. Por ejemplo, la rama de aprendizaje de programación web incluye cursos de HTML, CSS, JavaScript, PHP y MySQL.</p>
+                    <li>¿Qué es un curso de nivel básico?</li>
+                    <p>Un curso de nivel básico es un curso que te enseña los conceptos básicos de un tema. Por ejemplo, un curso de nivel básico de programación web te enseñará los conceptos básicos de HTML, CSS y JavaScript.</p>
+                    <li>¿Qué es un curso de nivel intermedio?</li>
+                    <p>Un curso de nivel intermedio es un curso que te enseña los conceptos intermedios de un tema. Por ejemplo, un curso de nivel intermedio de programación web te enseñará los conceptos intermedios de HTML, CSS y JavaScript.</p>
+                    <li>¿Qué es un curso de nivel avanzado?</li>
+                    <p>Un curso de nivel avanzado es un curso que te enseña los conceptos avanzados de un tema. Por ejemplo, un curso de nivel avanzado de programación web te enseñará los conceptos avanzados de HTML, CSS y JavaScript.</p>
+                    <li>¿En cuanto tiempo puedo conseguir un empleo?</li>
+                    <p>Depende de ti, si te esfuerzas y aprendes a programar, puedes conseguir un empleo en 6 meses.</p>
+                    <li>Ultimas ofertas de empleo</li>
+                    <p>Si quieres ver las ultimas ofertas de empleo, puedes visitar la pagina de <a href="https://www.computrabajo.com/">computrabajo</a></p>
+
+                </ul>
+        </section>
+
+    </main>
 </body>
 <footer>
   <!-- 5 iconos relacionales a redes sociales -->
-    <ul>
-        <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook"></a></li>
-        <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram"></a></li>
-        <li><a href="https://twitter.com/"><img src="twitter.png" alt="twitter"></a></li>
-        <li><a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube"></a></li>
-        <li><a href="https://www.linkedin.com/"><img src="linkedin.png" alt="linkedin"></a></li>
+
+    <a class="icon" href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a class="icon" href="https://www.facebook.com/" target="_blank"></i><i class="fa-brands fa-facebook"></i></i></a>
+    <a class="icon" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+    <a class="icon" href="https://www.instagram.com/" target="_blank"></i><i class="fa-brands fa-instagram"></i></i></a>
+    <a class="icon" href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <p class="copyright">Derechos reservados grupo 30 Codo a codo @2022</p>
 </footer>
 <!--Javascript -->
 <script>
