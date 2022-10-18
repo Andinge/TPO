@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Esta parte hay que modificarla junto al css  -->
-
-    <!-- <link rel="stylesheet" href="./style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">    -->
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/198c1dc03d.js" crossorigin="anonymous"></script>  
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./Logos TPO/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
 
     <title>Programar es posible</title>
 </head>
@@ -24,7 +24,6 @@
     <header>
         <h1 id="titulo">Programar es posible</h1>
         <img src="./Logos TPO/Programar.gif" alt="Programar es posible">
-        <nav>
         <nav>
             <!-- dirigirse a seccion "cursos gratis" de la pagina -->
             <a href="#Cursos gratis">Cursos gratis</a>
@@ -45,60 +44,56 @@
         <!-- Seccion 1 =  -->
         <!-- Seccion donde va la pagina linkeada a la web de Miguel despues yo hago el html-->
 
-
-
-            <!-- Seccion 2 = Cursos gratis, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
-        <section id="Cursos gratis">
-                <h2>Cursos gratis</h2>
-                <!-- crear div principal con 3 div interiores y que cada uno contenga un div tumbail 50% y un div parrafo 30% -->
+        <!-- Seccion 2 = Cursos gratis, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
+        <section class="seccion_curso" id="Cursos_gratis">
+            <h2>Cursos gratis</h2>
+            <!-- crear div principal con 3 div interiores y que cada uno contenga un div tumbail 50% y un div parrafo 30% -->
             <div class="cursos">
                 <div class="curso">
                     <div class="tumbail">
-                         <a href="https://es.khanacademy.org/"target="_blank"><img src="./Logos TPO/Khan Academy.png"> </a>
+                         <a href="https://es.khanacademy.org/"target="_blank"><img width="250px" src="./Logos TPO/Khan Academy.png"> </a>
                     </div>
-
-                <div class="descripcion">
-                    <p>Somos una organización sin fines de lucro con la misión de ofrecer educación gratuita de primer nivel, para cualquier persona en cualquier lugar.</p>
+                    <div class="descripcion">
+                        <p>Somos una organización sin fines de lucro con la misión de ofrecer educación gratuita de primer nivel, para cualquier persona en cualquier lugar.</p>
+                    </div>
+                    <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
+                    <div class="boton">
+                        <a href="https://es.khanacademy.org/"target="_blank">Ver curso</a>
+                    </div>
                 </div>
-                <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
-                <div class="boton">
-                    <a href="https://es.khanacademy.org/"target="_blank">Ver curso</a>
+                <div class="curso">
+                    <div class="tumbail">
+                        <a href="https://eggcooperation.com" target="_blank"><img width="250px" src="./Logos TPO/egg.png"></a>
+                    </div>
+                    <div class="descripcion">
+                        <p>La Beca Egg es un beneficio para cursar Programación Desde Cero durante 7 semanas, ideal para quienes tienen el impulso y las ganas de formarse con nosotros, pero necesitan validar de forma rápida si desean invertir su tiempo en desarrollar un perfil profesional como programadores.</p>
+                    </div>
+                    <div class="boton">
+                        <a href="https://eggcooperation.com" target="_blank">Ver curso</a>
+                    </div>
                 </div>
-            <div class="curso">
-                <div class="tumbail">
-                    <a href="https://eggcooperation.com" target="_blank"><img src="./Logos TPO/egg.png"></a>
-                </div>
-                <div class="descripcion">
-                    <p>La Beca Egg es un beneficio para cursar Programación Desde Cero durante 7 semanas, ideal para quienes tienen el impulso y las ganas de formarse con nosotros, pero necesitan validar de forma rápida si desean invertir su tiempo en desarrollar un perfil profesional como programadores.</p>
-                </div>
-                <div class="boton">
-                    <a href="https://eggcooperation.com" target="_blank">Ver curso</a>
+                <div class="curso">
+                    <div class="tumbail">
+                        <a href="https://www.freecodecamp.org/espanol/" target="_blank"><img width="250px" src="./Logos TPO/freecodecamp.png"></a>
+                    </div>
+                    <div class="descripcion">
+                        <p>FreeCodeCamp es una comunidad de código abierto donde puedes aprender a programar y ayudar a otros a hacerlo. Nuestro enfoque es ayudarte a construir una carrera en desarrollo web, pero también puedes aprender a programar para cualquier cosa que te guste.</p>
+                    </div>
+                    <div class="boton">
+                        <a href="https://www.freecodecamp.org/espanol/" target="_blank">Ver curso</a>
+                    </div>
                 </div>
             </div>
-            <div class="curso">
-                <div class="tumbail">
-                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"><img src="./Logos TPO/freecodecamp.png"></a>
-                </div>
-                <div class="descripcion">
-                    <p>FreeCodeCamp es una comunidad de código abierto donde puedes aprender a programar y ayudar a otros a hacerlo. Nuestro enfoque es ayudarte a construir una carrera en desarrollo web, pero también puedes aprender a programar para cualquier cosa que te guste.</p>
-                </div>
-                <div class="boton">
-                    <a href="https://www.freecodecamp.org/espanol/" target="_blank">Ver curso</a>
-                </div>
          </section>
-            
-
-
-
 
             <!-- Seccion 3 = Cursos pagos, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
-        <section id="Cursos pagos">
+        <section class="seccion_curso" id="Cursos_pagos">
             <h2>Cursos pagos</h2>
             <!-- crear div principal con 3 div interiores y que cada uno contenga un div tumbail 50% y un div parrafo 30% -->
             <div class="cursos">
                 <div class="curso">
                     <div class="tumbail">
-                        <a href="https://www.udemy.com/course/curso-completo-de-desarrollo-web-con-html5-css3-js-php-y-mysql/" target="_blank"><img src="./Logos TPO/udemy.png"></a>
+                        <a href="https://www.udemy.com/course/curso-completo-de-desarrollo-web-con-html5-css3-js-php-y-mysql/" target="_blank"><img width="250px" src="./Logos TPO/udemy.png"></a>
                     </div>
                     <div class="descripcion">
                         <p>Curso completo de desarrollo web con HTML5, CSS3, JS, PHP y MySQL.
@@ -110,10 +105,11 @@
                     <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
                     <div class="boton">
                         <a href="https://www.udemy.com/course/curso-completo-de-desarrollo-web-con-html5-css3-js-php-y-mysql/" target="_blank">Ver curso</a>
+                    </div>
                 </div>
                 <div class="curso">
                     <div class="tumbail">
-                        <a href="https://www.educacionit.com" target="_blank"><img src="./Logos TPO/educacion IT.png"></a>
+                        <a href="https://www.educacionit.com" target="_blank"><img width="250px" src="./Logos TPO/educacion IT.png"></a>
                     </div>
                     <div class="descripcion">
                         <p>Descubre los alcances que tiene el ecosistema digital y cómo se convirtió en un requisito indispensable para el mercado laboral.
@@ -123,10 +119,11 @@
                     <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
                     <div class="boton">
                         <a href="https://www.educacionit.com" target="_blank">Ver curso</a>
+                    </div>
                 </div>
                 <div class="curso">
                     <div class="tumbail">
-                        <a href="https://platzi.com/" target="_blank"><img src="./Logos TPO/Platzy.png"></a>
+                        <a href="https://platzi.com/" target="_blank"><img width="250px" src="./Logos TPO/Platzy.png"></a>
                     </div>
                     <div class="descripcion">
                         <p>Platzi es una plataforma de educación en línea que ofrece cursos de desarrollo web, diseño, marketing, negocios, tecnología y mucho más.
@@ -136,15 +133,16 @@
                     <!-- Agregar un boton que nos dirija al sitio web, que diga "ver curso" -->
                     <div class="boton">
                         <a href="https://platzi.com/" target="_blank">Ver curso</a>
+                    </div>
                 </div>
             </div>
         </section>
              <!-- Seccion 4 = Cursos desde youtube de programacion
             , donde hay 3 ventanas que muestran 3 paginas web a traves de iframe(que muestre el primer video de cada curso) -->
 
-            <section id="Cursos de Youtube" class="Cursos de youtube">
+            <section class="seccion_curso" id="Cursos_Youtube">
 
-                <h2>Cursos desde youtube</h2>
+                <h2>Cursos de youtube</h2>
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -154,7 +152,7 @@
 
             </section>
             <!-- Seccion 5 = recursos web de programacion -->
-            <section id="Recursos web" class="Recursos web">
+            <section id="Recursos_web">
                 <h2>Recursos web</h2>
                 <ul>
                     <li><a href="https://www.w3schools.com/">W3Schools</a></li>
@@ -167,7 +165,7 @@
 
             </section>
             <!-- Seccion 6 = Preguntas frecuentes-->
-            <section id="Preguntas frecuentes" class="Preguntas frecuentes">
+            <section id="Preguntas_frecuentes">
                 <h2>Preguntas frecuentes</h2>
                 <ul>
                     <li>¿Qué es un curso?</li>
@@ -192,7 +190,6 @@
                     <p>Depende de ti, si te esfuerzas y aprendes a programar, puedes conseguir un empleo en 6 meses.</p>
                     <li>Ultimas ofertas de empleo</li>
                     <p>Si quieres ver las ultimas ofertas de empleo, puedes visitar la pagina de <a href="https://www.computrabajo.com/">computrabajo</a></p>
-
                 </ul>
         </section>
 
@@ -202,9 +199,9 @@
   <!-- 5 iconos relacionales a redes sociales -->
 
     <a class="icon" href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-    <a class="icon" href="https://www.facebook.com/" target="_blank"></i><i class="fa-brands fa-facebook"></i></i></a>
+    <a class="icon" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
     <a class="icon" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-    <a class="icon" href="https://www.instagram.com/" target="_blank"></i><i class="fa-brands fa-instagram"></i></i></a>
+    <a class="icon" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     <a class="icon" href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     <p class="copyright">Derechos reservados grupo 30 Codo a codo @2022</p>
 </footer>
