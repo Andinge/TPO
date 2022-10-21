@@ -9,11 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/198c1dc03d.js" crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/198c1dc03d.js" crossorigin="anonymous"></script>  
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./Logos TPO/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mistylo.css">
 
     <title>Programar es posible</title>
 </head>
@@ -23,32 +32,30 @@
 
     <header>
         <nav>
-            <!-- logo -->
-            <img src="./Logos TPO/Programar.gif" id="logo_principal" width="150px" alt="Programar es posible">
             <div>
+                 <!-- logo -->
+                <img id="logo_principal" alt="Programar es posible" src="./Logos TPO/Logo programar fondo.gif">
+            
                 <!-- dirigirse a seccion "cursos gratis" de la pagina -->
-                <a href="#Cursos_gratis">Cursos gratis</a>
+                <a  href="#Cursos_gratis">Cursos gratis</a>
                 <!-- dirigirse a seccion "cursos pagos" de la pagina -->
-                <a href="#Cursos_pagos">Cursos pagos</a>
+                <a  href="#Cursos_pagos">Cursos pagos</a>
                 <!-- dirigirse a seccion "cursos de Youtube" de la pagina -->
-                <a href="#Cursos_youtube">Cursos de Youtube</a>
+                <a  href="#Cursos_youtube">Cursos de Youtube</a>
                 <!-- dirigirse a seccion "Recursos web" de la pagina -->
-                <a href="#Recursos_web">Recursos web</a>
+                <a  href="#Recursos_web">Recursos web</a>
                 <!-- dirigirse a seccion "Preguntas frecuentes" de la pagina -->
-                <a href="#Preguntas_frecuentes">Preguntas frecuentes</a>
+                <a class="links"  href="#Preguntas_frecuentes">Preguntas frecuentes</a>
                 <!-- dirigirse a seccion "Contacto" de la pagina -->
-                <a class="formulario" href="formulario.html">Registro</a>
+                <a class="links" href="formulario.html">Registro</a>
             </div>            
         </nav>
         <h1 id="titulo">Programar es posible</h1>
     </header>
     <main>
-        <!-- Seccion 1 =  -->
-        <!-- Seccion donde va la pagina linkeada a la web de Miguel despues yo hago el html-->
-
-        <!-- Seccion 2 = Cursos gratis, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
-        <section class="seccion_curso" id="Cursos_gratis">
-            <h2>Cursos gratis</h2>
+        <!-- Seccion 1 = Cursos gratis, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
+        <section>
+            <h2 id="sec">Cursos gratis</h2>
             <!-- crear div principal con 3 div interiores y que cada uno contenga un div tumbail 50% y un div parrafo 30% -->
             <div class="cursos">
                 <div class="curso">
@@ -76,7 +83,7 @@
                 </div>
                 <div class="curso">
                     <div class="tumbail">
-                        <a href="https://www.freecodecamp.org/espanol/" target="_blank"><img width="250px" src="./Logos TPO/freecodecamp.png"></a>
+                        <a href="https://www.freecodecamp.org/espanol/" target="_blank"><img width="250px" src="./Logos TPO/Freecodecamp.png"></a>
                     </div>
                     <div class="descripcion">
                         <p>FreeCodeCamp es una comunidad de código abierto donde puedes aprender a programar y ayudar a otros a hacerlo. Nuestro enfoque es ayudarte a construir una carrera en desarrollo web, pero también puedes aprender a programar para cualquier cosa que te guste.</p>
@@ -88,9 +95,9 @@
             </div>
          </section>
 
-            <!-- Seccion 3 = Cursos pagos, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
-        <section class="seccion_curso" id="Cursos_pagos">
-            <h2>Cursos pagos</h2>
+            <!-- Seccion 2 = Cursos pagos, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
+        <section>
+            <h2 id="sec">Cursos pagos</h2>
             <!-- crear div principal con 3 div interiores y que cada uno contenga un div tumbail 50% y un div parrafo 30% -->
             <div class="cursos">
                 <div class="curso">
@@ -139,77 +146,76 @@
                 </div>
             </div>
         </section>
-             <!-- Seccion 4 = Cursos desde youtube de programacion
+             <!-- Seccion 3 = Cursos desde youtube de programacion
             , donde hay 3 ventanas que muestran 3 paginas web a traves de iframe(que muestre el primer video de cada curso) -->
 
-            <section class="seccion_curso" id="Cursos_youtube">
+            <section>
 
-                <h2>Cursos de youtube</h2>
+                <h2 id="sec">Cursos de youtube</h2>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AXPASVeX74o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video"  src="https://www.youtube.com/embed/AXPASVeX74o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/spMYZHepjko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            </section>
-            <!-- Seccion 5 = recursos web de programacion -->
-            <section id="Recursos_web">
-                <h2>Recursos web</h2>
-                <ul>
-                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-                    <li><a href="https://developer.mozilla.org/es/">MDN</a></li>
-                    <li><a href="https://www.codeshare.io/">Codeshare</a></li>
-                    <li><a href="https://www.lenguajehtml.com//">Lenguaje html</a></li>
-                    <li><a href="https://www.formspree.io/">Formspree</a></li>
-                    <li><a href="https://www.sololearn.com/">SoloLearn</a></li>
-                </ul>
+                <iframe id="video"  src="https://www.youtube.com/embed/spMYZHepjko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </section>
-            <!-- Seccion 6 = Preguntas frecuentes-->
-            <section id="Preguntas_frecuentes">
-                <h2>Preguntas frecuentes</h2>
-                <ul>
+            <!-- Seccion 4 = recursos web de programacion -->
+            <section>
+                <h2 id="sec">Recursos web</h2>
+               <div id="lista1">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                        <li><a href="https://developer.mozilla.org/es/">MDN</a></li>
+                        <li><a href="https://www.codeshare.io/">Codeshare</a></li>
+                        <li><a href="https://www.lenguajehtml.com//">Lenguaje html</a></li>
+                        <li><a href="https://www.formspree.io/">Formspree</a></li>
+                        <li><a href="https://www.sololearn.com/">SoloLearn</a></li>
+                    </ul>
+
+               </div>
+            </section>
+            <!-- Seccion 5 = Preguntas frecuentes-->
+            <section>
+                <h2 id="sec">Preguntas frecuentes</h2>
+                <ol id="lista4">
                     <li>¿Qué es un curso?</li>
-                    <p>Un curso es una serie de lecciones que te ayudarán a aprender un tema específico. Cada curso tiene un objetivo y un nivel de dificultad.</p>
+                    <p id="preg">Un curso es una serie de lecciones que te ayudarán a aprender un tema específico. Cada curso tiene un objetivo y un nivel de dificultad.</p>
                     <li>¿Qué es un curso gratuito?</li>
-                    <p>Un curso gratuito es un curso que puedes tomar sin pagar nada. Puedes acceder a todos los cursos sin cargo.</p>
+                    <p id="preg" >Un curso gratuito es un curso que puedes tomar sin pagar nada. Puedes acceder a todos los cursos sin cargo.</p>
                     <li>¿Qué es un curso de pago?</li>
-                    <p>Un curso de pago es un curso que puedes tomar pagando una tarifa. Puedes acceder a todos los cursos de pago.</p>
+                    <p id="preg">Un curso de pago es un curso que puedes tomar pagando una tarifa. Puedes acceder a todos los cursos de pago.</p>
                     <li>¿Es necesario ir a la universidad?</li>
-                    <p>La universidad es una gran opción para aprender, pero no es la única. En la actualidad, existen muchas otras opciones para aprender, como los cursos en línea.</p>
+                    <p id="preg">La universidad es una gran opción para aprender, pero no es la única. En la actualidad, existen muchas otras opciones para aprender, como los cursos en línea.</p>
                     <li>¿Qué es un curso de certificación?</li>
-                    <p>Un curso de certificación es un curso que te prepara para obtener una certificación. Al finalizar el curso, puedes tomar un examen para obtener una certificación.</p>
+                    <p id="preg">Un curso de certificación es un curso que te prepara para obtener una certificación. Al finalizar el curso, puedes tomar un examen para obtener una certificación.</p>
                     <li>¿Qué es una rama de aprendizaje?</li>
-                    <p>Una rama de aprendizaje es un conjunto de cursos que te ayudarán a aprender un tema específico. Por ejemplo, la rama de aprendizaje de programación web incluye cursos de HTML, CSS, JavaScript, PHP y MySQL.</p>
-                    <li>¿Qué es un curso de nivel básico?</li>
-                    <p>Un curso de nivel básico es un curso que te enseña los conceptos básicos de un tema. Por ejemplo, un curso de nivel básico de programación web te enseñará los conceptos básicos de HTML, CSS y JavaScript.</p>
+                    <p id="preg">Una rama de aprendizaje es un conjunto de cursos que te ayudarán a aprender un tema específico. Por ejemplo, la rama de aprendizaje de programación web incluye cursos de HTML, CSS, JavaScript, PHP y MySQL.</p>
+                    <li >¿Qué es un curso de nivel básico?</li>
+                    <p id="preg" >Un curso de nivel básico es un curso que te enseña los conceptos básicos de un tema. Por ejemplo, un curso de nivel básico de programación web te enseñará los conceptos básicos de HTML, CSS y JavaScript.</p>
                     <li>¿Qué es un curso de nivel intermedio?</li>
-                    <p>Un curso de nivel intermedio es un curso que te enseña los conceptos intermedios de un tema. Por ejemplo, un curso de nivel intermedio de programación web te enseñará los conceptos intermedios de HTML, CSS y JavaScript.</p>
+                    <p id="preg">Un curso de nivel intermedio es un curso que te enseña los conceptos intermedios de un tema. Por ejemplo, un curso de nivel intermedio de programación web te enseñará los conceptos intermedios de HTML, CSS y JavaScript.</p>
                     <li>¿Qué es un curso de nivel avanzado?</li>
-                    <p>Un curso de nivel avanzado es un curso que te enseña los conceptos avanzados de un tema. Por ejemplo, un curso de nivel avanzado de programación web te enseñará los conceptos avanzados de HTML, CSS y JavaScript.</p>
+                    <p id="preg">Un curso de nivel avanzado es un curso que te enseña los conceptos avanzados de un tema. Por ejemplo, un curso de nivel avanzado de programación web te enseñará los conceptos avanzados de HTML, CSS y JavaScript.</p>
                     <li>¿En cuanto tiempo puedo conseguir un empleo?</li>
-                    <p>Depende de ti, si te esfuerzas y aprendes a programar, puedes conseguir un empleo en 6 meses.</p>
+                    <p id="preg">Depende de ti, si te esfuerzas y aprendes a programar, puedes conseguir un empleo en 6 meses.</p>
                     <li>Ultimas ofertas de empleo</li>
-                    <p>Si quieres ver las ultimas ofertas de empleo, puedes visitar la pagina de <a href="https://www.computrabajo.com/">computrabajo</a></p>
-                </ul>
+                    <p id="preg">Si quieres ver las ultimas ofertas de empleo, puedes visitar la pagina de <a href="https://www.computrabajo.com/">computrabajo</a></p>
+                </ol>
         </section>
 
     </main>
+    <footer>
+        <!-- 5 iconos relacionales a redes sociales -->
+      
+          <a class="icon" href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a class="icon" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a class="icon" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+          <a class="icon" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="icon" href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <p class="copyright">Derechos reservados grupo 30 Codo a codo @2022</p>
+      </footer>
 </body>
-<footer>
-  <!-- 5 iconos relacionales a redes sociales -->
 
-    <a class="icon" href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-    <a class="icon" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    <a class="icon" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-    <a class="icon" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a class="icon" href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <p class="copyright">Derechos reservados grupo 30 Codo a codo @2022</p>
-</footer>
-<!--Javascript -->
-<script>
-    
-</script>
 
 </html>
