@@ -52,7 +52,7 @@
                 <!-- dirigirse a seccion "Preguntas frecuentes" de la pagina -->
                 <a href="#Preguntas_frecuentes">Preguntas frecuentes</a>
                 <!-- dirigirse a seccion "Contacto" de la pagina -->
-                <a href="./myform.html">Contacto</a>
+                <a href="#contacto">Contacto</a>
             </div>            
         </nav>
         <h1 id="titulo">Programar es posible</h1>
@@ -213,8 +213,8 @@
                 <br><br><br><br>
         </section>
             <!-- Seccion 6 = Contacto -->
-        <section>
-            <h2 id="Contacto" class="secciones">Contacto</h2>
+        <section class="seccion_contacto">
+            <h2 id="contacto" class="secciones">Contacto</h2>
             <form action="https://formspree.io/f/mdojlrlo" method="POST">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
@@ -222,10 +222,11 @@
                 <input type="email" name="correo" id="correo" placeholder="Escribe tu correo" required>
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            <input type="button" value="Cancelar" onclick="location.href='index.html'">
-
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <input type="button" value="Cancelar" onclick="location.href='index.html'">
+                </div>
             </form>
         </section>
     </main>
