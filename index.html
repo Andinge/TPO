@@ -37,10 +37,9 @@
 
     <header>
         <nav>
+             <!-- logo -->
+            <img id="logo_principal" alt="Programar es posible" src="./Logos TPO/prefavicon.png">
             <div>
-                 <!-- logo -->
-                <img id="logo_principal" alt="Programar es posible" src="./Logos TPO/Logo programar fondo.gif">
-            
                 <!-- dirigirse a seccion "cursos gratis" de la pagina -->
                 <a  href="#Cursos_gratis">Cursos gratis</a>
                 <!-- dirigirse a seccion "cursos pagos" de la pagina -->
@@ -55,7 +54,7 @@
                 <a href="#contacto">Contacto</a>
             </div>            
         </nav>
-        <h1 id="titulo">Programar es posible</h1>
+        <h1 class="animate__fadeInDown animate__faster" id="titulo">PROGRAMAR ES POSIBLE</h1>
     </header>
     <main>
         <!-- Seccion 1 = Cursos gratis, donde hay una tabla con 3 columnas y dos filas, en cada fila arriba hay un logo de cada curso y debejo la descripcion -->
@@ -209,6 +208,8 @@
                     <p class="preg">Depende de ti, si te esfuerzas y aprendes a programar, puedes conseguir un empleo en 6 meses.</p>
                 <li>Ultimas ofertas de empleo</li>
                     <p class="preg">Si quieres ver las ultimas ofertas de empleo, puedes visitar la pagina de <a href="https://www.computrabajo.com/"target="_blank">computrabajo</a></p>
+                <li>¿Cuanto es el sueldo promedio de un programador?</li>
+                    <p class="preg" id="textoapi"></p>
             </ol>
                 <br><br><br><br>
         </section>
@@ -223,9 +224,9 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
                 <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                    <input type="button" value="Cancelar" onclick="location.href='index.html'">
+                    <input class="btnform" type="submit" value="Enviar">
+                    <input class="btnform" type="reset" value="Borrar">
+                    <input class="btnform" type="button" value="Cancelar" onclick="location.href='index.html'">
                 </div>
             </form>
         </section>
@@ -242,6 +243,19 @@
     </footer>
 </body>
 <script>
+    // agregando api para calcular el sueldo de un programador
+    const textoApi = document.getElementById("textoapi");
+    let sueldoProgramador=187000;
+
+    const sueldoADolar = async ()=>{
+        const urlDolar = "https://api-dolar-argentina.herokuapp.com/api/dolarblue";
+        let response = await fetch(urlDolar);
+        let data = await response.json();
+        let sueldoDolarizado=sueldoProgramador/data.venta
+        textoApi.innerHTML=`El sueldo medio de Desarrollador de software / Programador en Argentina es de $187.000/US$${Math.round(sueldoDolarizado)} mensual.`
+    }
+    sueldoADolar()
+
     //Funcion para el menu responsive
     function menuResponsive() {
         var x = document.getElementById("menu");

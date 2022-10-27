@@ -18,7 +18,6 @@ body{
     /* padding: 1.25rem 0rem; */
     text-align:center;
     color: #0B243B;
-    animation:flip; 
     animation-duration: 5s; 
 }
  
@@ -26,14 +25,18 @@ body{
 nav{
     background-color: #0B243B;
     align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    padding-right: 40px;
     /* padding-right: 3rem;
     padding-left: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem; */
     position: relative;
 }
-nav a{
+nav div a{
     color:rgb(255, 255, 255);
     border: #E6E6E6 2px solid;
     border-radius: 0.5rem;
@@ -52,8 +55,7 @@ nav a:hover{
     font-weight: 600;
 }
 #logo_principal{
-    height: 30rem;
-    width: 40rem;
+    height: 80px;
     position: relative;
 }
 /* main index */
@@ -72,7 +74,7 @@ nav a:hover{
     border-radius: 10px;
     margin: 10px;
     text-align: justify;
-    background-color: wheat;
+    background-color: white;
 }
 
 .tumbail{
@@ -112,6 +114,7 @@ nav a:hover{
     padding: 1rem;
     color:black;
     text-decoration:solid;
+    background-color: wheat;
 }
  
 .boton a{
@@ -254,15 +257,13 @@ input{
     color: black;
 
 }
-
-#form button {
-    background-color: #4CAF50;
+.btnform {
+    background-color: #0B243B;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
 }
 
 
