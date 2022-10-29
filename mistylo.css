@@ -36,7 +36,7 @@ nav{
     padding-bottom: 1rem; */
     position: relative;
 }
-nav div a{
+nav div a, #atajos_nav_responsive a{
     color:rgb(255, 255, 255);
     border: #E6E6E6 2px solid;
     border-radius: 0.5rem;
@@ -58,6 +58,20 @@ nav a:hover{
     height: 80px;
     position: relative;
 }
+
+.toggle-menu{
+    display: none;
+}
+
+#menu-brgr{
+    cursor: pointer;
+    display: none;
+}
+
+.atajos_nav_responsive{
+    display: none;
+}
+
 /* main index */
 .cursos{
     display: flex;
@@ -85,7 +99,7 @@ nav a:hover{
 }
 
 #video {
-    flex: 3;
+    min-width: 390px;
     width: 28%;
     border: 2px solid #17202A;
     border-radius: 10px;
@@ -266,298 +280,12 @@ input{
     cursor: pointer;
 }
 
-
-
 footer{
     background-color:linear-gradient(135deg, rgba(34,193,195,1) 23%, rgba(253,247,45,1) 100%); 
     text-align: center;
     color:white;
     left: 0;
     bottom:0;
-    width:100%;
-    padding: 20px;
-    height: 50px;
-    font-size: 20px;
-    margin-top: 0px;
-    font-family: 'Quicksand', sans-serif;
-    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.icon{
-    color:white;
-    margin: 0px, 6px;
-    font-size:2vw;
-}
-
-/* Medias queries andrea */
-
-@media screen and (max-width:1024px){
-    #lista4 ol {
-        counter-reset: li; 
-        list-style: none; 
-        list-style: decimal; 
-        font: 15px 'trebuchet MS', 'lucida sans';
-        padding: 0;
-        margin-bottom: 4em;
-        text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    }
-    
-    #lista4 ol {
-        margin: 0 0 0 2em; 
-    }
-    
-    #lista4 {
-        list-style-type: none;
-        list-style-type: decimal !ie; 
-        margin: 40px;
-        margin-left: 3em;
-        padding: 0; 
-        counter-reset: li-counter;
-    }
-    
-    #lista4 > li{
-        position: relative;
-        margin-bottom: 20px;
-        padding: 1em;
-        border-left: 2px solid #CCCCCC;
-        background-color:rgb(164, 229, 235);
-        font-size: 2rem;
-        margin-left: 5rem;
-        font-family: 'Quicksand', sans-serif;
-        
-    }
-    
-    #lista4 > li:before {
-        position: absolute;
-        top: 0;
-        left: -0.95em;
-        width: 1em;
-        font-size: 4em;
-        line-height: 1;
-        font-weight: bold;
-        text-align: right;
-        color: #000000;
-         
-        transform: rotate(-25deg);
-        -ms-transform: rotate(-25deg);
-        -webkit-transform: rotate(-25deg);
-        z-index: -99;
-        overflow: hidden;
-         
-        content: counter(li-counter);
-        counter-increment: li-counter;
-    }
-    
-    
-    .preg{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2rem;
-        text-align: left;
-        color: rgb(3, 9, 31);
-        margin-left: 90px;
-        font-family: 'Quicksand', sans-serif;
-    }
-
-@media screen and (max-width 768px) {
-    #lista4 ol {
-        counter-reset: li; 
-        list-style: none; 
-        list-style: decimal; 
-        font: 15px 'trebuchet MS', 'lucida sans';
-        padding: 0;
-        margin-bottom: 4em;
-        text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    }
-    
-    #lista4 ol {
-        margin: 0 0 0 2em; 
-    }
-    
-    #lista4 {
-        list-style-type: none;
-        list-style-type: decimal !ie; 
-        margin: 40px;
-        margin-left: 3em;
-        padding: 0; 
-        counter-reset: li-counter;
-    }
-    
-    #lista4 > li{
-        position: relative;
-        margin-bottom: 20px;
-        padding: 1em;
-        border-left: 2px solid #CCCCCC;
-        background-color:rgb(164, 229, 235);
-        font-size: 2rem;
-        margin-left: 5rem;
-        font-family: 'Quicksand', sans-serif;
-        
-    }
-    
-    #lista4 > li:before {
-        position: absolute;
-        top: 0;
-        left: -0.95em;
-        width: 1em;
-        font-size: 4em;
-        line-height: 1;
-        font-weight: bold;
-        text-align: right;
-        color: #000000;
-         
-        transform: rotate(-25deg);
-        -ms-transform: rotate(-25deg);
-        -webkit-transform: rotate(-25deg);
-        z-index: -99;
-        overflow: hidden;
-         
-        content: counter(li-counter);
-        counter-increment: li-counter;
-    }
-    
-    
-    .preg{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2rem;
-        text-align: left;
-        color: rgb(3, 9, 31);
-        margin-left: 90px;
-        font-family: 'Quicksand', sans-serif;
-    }    
-}    
-
-@media screen and (max-width: 480px){
-    #lista4 ol {
-        counter-reset: li; 
-        list-style: none; 
-        list-style: decimal; 
-        font: 15px 'trebuchet MS', 'lucida sans';
-        padding: 0;
-        margin-bottom: 4em;
-        text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    }
-    
-    #lista4 ol {
-        margin: 0 0 0 2em; 
-    }
-    
-    #lista4 {
-        list-style-type: none;
-        list-style-type: decimal !ie; 
-        margin: 40px;
-        margin-left: 3em;
-        padding: 0; 
-        counter-reset: li-counter;
-    }
-    
-    #lista4 > li{
-        position: relative;
-        margin-bottom: 20px;
-        padding: 1em;
-        border-left: 2px solid #CCCCCC;
-        background-color:rgb(164, 229, 235);
-        font-size: 2rem;
-        margin-left: 5rem;
-        font-family: 'Quicksand', sans-serif;
-        
-    }
-    
-    #lista4 > li:before {
-        position: absolute;
-        top: 0;
-        left: -0.95em;
-        width: 1em;
-        font-size: 4em;
-        line-height: 1;
-        font-weight: bold;
-        text-align: right;
-        color: #000000;
-         
-        transform: rotate(-25deg);
-        -ms-transform: rotate(-25deg);
-        -webkit-transform: rotate(-25deg);
-        z-index: -99;
-        overflow: hidden;
-         
-        content: counter(li-counter);
-        counter-increment: li-counter;
-    }
-    
-    
-    .preg{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2rem;
-        text-align: left;
-        color: rgb(3, 9, 31);
-        margin-left: 90px;
-        font-family: 'Quicksand', sans-serif;
-    }
-}
-/* dar stylo a formulario */
-form{
-    background-color:gray;
-    color:white;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 400px;
-    font-size: 20px;
-}
-#nombre{
-    text-align: center;
-    border-radius: 2px;
-    background-color: #f2f2f2;
-    padding: 5px;
-    background-color: black;
-    color: white;
-
-}
-#apellido{
-    text-align: center;
-    border-radius: 2px;
-    background-color: #f2f2f2;
-    padding: 5px;
-    background-color: black;
-    color: white;
-}
-#email{
-    text-align: center;
-    border-radius: 2px;
-    background-color: #f2f2f2;
-    padding: 5px;
-    background-color: black;
-    color: white;
-}
-#comentarios{
-    text-align: center;
-    border-radius: 2px;
-    background-color: #f2f2f2;
-    padding: 5px;
-    background-color: black;
-    color: white;
-}
-
-
-#form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-
-
-footer{
-    background-color:linear-gradient(135deg, rgba(34,193,195,1) 23%, rgba(253,247,45,1) 100%); 
-    text-align: center;
-    color:white;
-    left: 0;
-    bottom:0;
-    width:100%;
     padding: 20px;
     height: 50px;
     font-size: 20px;
@@ -571,12 +299,42 @@ footer{
     font-size:2vw;
 }
 .icon:hover{
-    color: #000;
+    color: #0B243B;
     font-size: 3vw;
     transition: 0.5s;
 }
 
+/* Medias queries */
+
 @media screen and (max-width:1024px){
+
+    /* nav responsive */
+    #atajos_nav{
+        display: none;
+    }
+
+    #menu-brgr{
+        display: block;
+    }
+
+    .atajos_nav_responsive{
+        background-color: #0B243B;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        padding-right: 40px;
+        flex-direction: column;
+    }
+    .atajos_nav_responsive a{
+        font-size: 1.5rem;
+    }
+
+    .toggle-menu{
+        display: none;
+    }
+
     #lista4 ol {
         counter-reset: li; 
         list-style: none; 
@@ -593,7 +351,6 @@ footer{
     
     #lista4 {
         list-style-type: none;
-        list-style-type: decimal !ie; 
         margin: 40px;
         margin-left: 3em;
         padding: 0; 
@@ -642,8 +399,8 @@ footer{
         margin-left: 90px;
         font-family: 'Quicksand', sans-serif;
     }
-
-@media screen and (max-width 768px) {
+}
+@media screen and (max-width: 768px) {
     #lista4 ol {
         counter-reset: li; 
         list-style: none; 
@@ -660,7 +417,6 @@ footer{
     
     #lista4 {
         list-style-type: none;
-        list-style-type: decimal !ie; 
         margin: 40px;
         margin-left: 3em;
         padding: 0; 
@@ -728,7 +484,6 @@ footer{
     
     #lista4 {
         list-style-type: none;
-        list-style-type: decimal !ie; 
         margin: 40px;
         margin-left: 3em;
         padding: 0; 
@@ -778,6 +533,3 @@ footer{
         font-family: 'Quicksand', sans-serif;
     }
 }
-
-
-

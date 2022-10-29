@@ -39,7 +39,7 @@
         <nav>
              <!-- logo -->
             <img id="logo_principal" alt="Programar es posible" src="./Logos TPO/prefavicon.png">
-            <div>
+            <div id="atajos_nav">
                 <!-- dirigirse a seccion "cursos gratis" de la pagina -->
                 <a  href="#Cursos_gratis">Cursos gratis</a>
                 <!-- dirigirse a seccion "cursos pagos" de la pagina -->
@@ -52,8 +52,27 @@
                 <a href="#Preguntas_frecuentes">Preguntas frecuentes</a>
                 <!-- dirigirse a seccion "Contacto" de la pagina -->
                 <a href="#contacto">Contacto</a>
-            </div>            
+            </div>
+            <div id="menu-brgr">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>         
         </nav>
+        <div class="toggle-menu atajos_nav_responsive" id="navResponsivo">
+            <!-- dirigirse a seccion "cursos gratis" de la pagina -->
+            <a  href="#Cursos_gratis">Cursos gratis</a>
+            <!-- dirigirse a seccion "cursos pagos" de la pagina -->
+            <a  href="#Cursos_pagos">Cursos pagos</a>
+            <!-- dirigirse a seccion "cursos de Youtube" de la pagina -->
+            <a  href="#Cursos_youtube">Cursos de Youtube</a>
+            <!-- dirigirse a seccion "Recursos web" de la pagina -->
+            <a  href="#Recursos_web">Recursos web</a>
+            <!-- dirigirse a seccion "Preguntas frecuentes" de la pagina -->
+            <a href="#Preguntas_frecuentes">Preguntas frecuentes</a>
+            <!-- dirigirse a seccion "Contacto" de la pagina -->
+            <a href="#contacto">Contacto</a>
+        </div>   
         <h1 class="animate__fadeInDown animate__faster" id="titulo">PROGRAMAR ES POSIBLE</h1>
     </header>
     <main>
@@ -160,11 +179,13 @@
 
             <h2 id="Cursos_youtube" class="secciones">Cursos de youtube</h2>
 
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="cursos">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AXPASVeX74o"target="_blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/spMYZHepjko"target="_blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AXPASVeX74o"target="_blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/spMYZHepjko"target="_blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            </div>
 
         </section>
             <!-- Seccion 4 = recursos web de programacion -->
@@ -241,50 +262,7 @@
         <a class="icon" href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <p class="copyright">Derechos reservados Grupo 30 Codo a codo @2022</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-<script>
-    // agregando api para calcular el sueldo de un programador
-    const textoApi = document.getElementById("textoapi");
-    let sueldoProgramador=187000;
-
-    const sueldoADolar = async ()=>{
-        const urlDolar = "https://api-dolar-argentina.herokuapp.com/api/dolarblue";
-        let response = await fetch(urlDolar);
-        let data = await response.json();
-        let sueldoDolarizado=sueldoProgramador/data.venta
-        textoApi.innerHTML=`El sueldo medio de Desarrollador de software / Programador en Argentina es de $187.000/US$${Math.round(sueldoDolarizado)} mensual.`
-    }
-    sueldoADolar()
-
-    //Funcion para el menu responsive
-    function menuResponsive() {
-        var x = document.getElementById("menu");
-        if (x.className === "menu") {
-            x.className += " responsive";
-        } else {
-            x.className = "menu";
-        }
-    }
-    //Funcion validar formulario
-    function validarFormulario() {
-        var nombre = document.getElementById("nombre").value;
-        var correo = document.getElementById("correo").value;
-        var mensaje = document.getElementById("mensaje").value;
-        if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
-            alert("El campo nombre no puede estar vacio");
-            return false;
-        }
-        if (correo == null || correo.length == 0 || /^\s+$/.test(correo)) {
-            alert("El campo correo no puede estar vacio");
-            return false;
-        }
-        if (mensaje == null || mensaje.length == 0 || /^\s+$/.test(mensaje)) {
-            alert("El campo mensaje no puede estar vacio");
-            return false;
-        }
-        return true;
-    }      
-
-</script>
 
 </html>
